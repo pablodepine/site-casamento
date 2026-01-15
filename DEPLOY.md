@@ -147,7 +147,7 @@ galeria de fotos e confirmar sua presença:
 
 Contamos com você neste dia tão especial!
 
-Ana & Bruno ❤️
+Letícia & Pablo ❤️
 ```
 
 ---

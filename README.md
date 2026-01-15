@@ -29,7 +29,7 @@ Não precisa instalar nada, é só HTML, CSS e JavaScript puro!
 
 Edite o arquivo `index.html` e altere:
 
-- **Nomes do casal**: Procure por "Ana & Bruno" e substitua pelos seus nomes
+- **Nomes do casal**: Procure por "Letícia & Pablo" e substitua pelos seus nomes
 - **Data do casamento**: Procure por "15 de Junho de 2026" e altere
 - **Local**: Procure por "São Paulo, SP" e altere
 
