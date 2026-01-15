@@ -504,12 +504,6 @@ body {
     text-align: center;
 }
 
-.pix-qrcode {
-    max-width: 300px;
-    margin: var(--spacing-xl) auto;
-    border-radius: var(--border-radius-lg);
-}
-
 .pix-key {
     display: flex;
     align-items: center;
