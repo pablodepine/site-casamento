@@ -26,26 +26,26 @@
     --font-primary: 'Playfair Display', serif;
     --font-secondary: 'Inter', sans-serif;
 
-    --font-size-xs: 0.75rem;
-    /* 12px */
-    --font-size-sm: 0.875rem;
-    /* 14px */
-    --font-size-base: 1rem;
-    /* 16px */
-    --font-size-lg: 1.125rem;
-    /* 18px */
-    --font-size-xl: 1.25rem;
-    /* 20px */
-    --font-size-2xl: 1.5rem;
-    /* 24px */
-    --font-size-3xl: 2rem;
-    /* 32px */
-    --font-size-4xl: 2.5rem;
-    /* 40px */
-    --font-size-5xl: 3rem;
-    /* 48px */
-    --font-size-6xl: 4rem;
-    /* 64px */
+    --font-size-xs: clamp(0.75rem, 2vw, 0.875rem);
+    /* 12px min, fluid, 14px max */
+    --font-size-sm: clamp(0.875rem, 2.5vw, 1rem);
+    /* 14px min, fluid, 16px max */
+    --font-size-base: clamp(1rem, 3vw, 1.125rem);
+    /* 16px min, fluid, 18px max */
+    --font-size-lg: clamp(1.125rem, 3.5vw, 1.25rem);
+    /* 18px min, fluid, 20px max */
+    --font-size-xl: clamp(1.25rem, 4vw, 1.5rem);
+    /* 20px min, fluid, 24px max */
+    --font-size-2xl: clamp(1.5rem, 5vw, 2rem);
+    /* 24px min, fluid, 32px max */
+    --font-size-3xl: clamp(2rem, 6vw, 2.5rem);
+    /* 32px min, fluid, 40px max */
+    --font-size-4xl: clamp(2.5rem, 7vw, 3rem);
+    /* 40px min, fluid, 48px max */
+    --font-size-5xl: clamp(3rem, 8vw, 4rem);
+    /* 48px min, fluid, 64px max */
+    --font-size-6xl: clamp(4rem, 10vw, 5rem);
+    /* 64px min, fluid, 80px max */
 
     --font-weight-light: 300;
     --font-weight-normal: 400;
