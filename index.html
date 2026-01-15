@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Celebre conosco o nosso casamento! Veja nossa história, galeria de fotos e contribua com presentes.">
+  <meta name="keywords" content="casamento, wedding, noivos, celebração">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nosso Casamento - [Nome do Casal]">
+  <meta property="og:description" content="Celebre conosco o nosso casamento!">
+  
+  <title>Nosso Casamento - [Nome do Casal]</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💕</text></svg>">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  
+  <!-- Header / Navegação -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <div class="nav-logo">A & B</div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link">Início</a></li>
+          <li><a href="#historia" class="nav-link">Nossa História</a></li>
+          <li><a href="#galeria" class="nav-link">Galeria</a></li>
+          <li><a href="#presentes" class="nav-link">Presentes</a></li>
+          <li><a href="#confirmacao" class="nav-link">Confirmar Presença</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <img src="images/hero/hero-bg.jpg" alt="Foto do casal" class="hero-bg" id="heroBg">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title animate-fade-in">Ana & Bruno</h1>
+      <p class="hero-subtitle animate-fade-in">Vamos nos casar!</p>
+      <p class="hero-date animate-fade-in">15 de Junho de 2026 • São Paulo, SP</p>
+      
+      <!-- Contador Regressivo -->
+      <div class="countdown animate-fade-in-up" id="countdown">
+        <div class="countdown-item">
+          <span class="countdown-value" id="days">000</span>
+          <span class="countdown-label">Dias</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-value" id="hours">00</span>
+          <span class="countdown-label">Horas</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-value" id="minutes">00</span>
+          <span class="countdown-label">Minutos</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-value" id="seconds">00</span>
+          <span class="countdown-label">Segundos</span>
+        </div>
+      </div>
+      
+      <div class="hero-cta animate-scale-in">
+        <a href="#confirmacao" class="btn btn-primary">Confirmar Presença</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nossa História -->
+  <section class="section" id="historia">
+    <div class="container">
+      <h2 class="section-title reveal">Nossa História</h2>
+      <p class="section-subtitle reveal">Uma jornada de amor que começou há alguns anos...</p>
+      
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-content">
+            <div class="timeline-date">Janeiro 2020</div>
+            <h3 class="timeline-title">Primeiro Encontro</h3>
+            <p class="timeline-text">
+              Nos conhecemos em um café no centro da cidade. Foi amor à primeira vista! 
+              Conversamos por horas e já sabíamos que era algo especial.
+            </p>
+          </div>
+          <div class="timeline-icon">💕</div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-content">
+            <div class="timeline-date">Julho 2020</div>
+            <h3 class="timeline-title">Primeiro "Eu Te Amo"</h3>
+            <p class="timeline-text">
+              Durante um passeio na praia ao pôr do sol, declaramos nosso amor pela primeira vez. 
+              Foi um momento mágico que nunca esqueceremos.
+            </p>
+          </div>
+          <div class="timeline-icon">❤️</div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-content">
+            <div class="timeline-date">Dezembro 2023</div>
+            <h3 class="timeline-title">Noivado</h3>
+            <p class="timeline-text">
+              Em uma viagem inesquecível, ele se ajoelhou e fez a pergunta mais importante. 
+              Claro que eu disse SIM! 💍
+            </p>
+          </div>
+          <div class="timeline-icon">💍</div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-content">
+            <div class="timeline-date">Junho 2026</div>
+            <h3 class="timeline-title">O Grande Dia</h3>
+            <p class="timeline-text">
+              Finalmente chegou o dia de oficializar nosso amor! 
+              E queremos você ao nosso lado neste momento tão especial.
+            </p>
+          </div>
+          <div class="timeline-icon">👰‍♀️🤵‍♂️</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria de Fotos -->
+  <section class="section" id="galeria" style="background: var(--color-white);">
+    <div class="container">
+      <h2 class="section-title reveal">Galeria de Fotos</h2>
+      <p class="section-subtitle reveal">Momentos especiais que compartilhamos juntos</p>
+      
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- As fotos serão inseridas aqui via JavaScript -->
+        <div class="gallery-item reveal" data-index="0">
+          <img src="images/gallery/photo1.jpg" alt="Foto do casal 1" class="gallery-img">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon">🔍</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-index="1">
+          <img src="images/gallery/photo2.jpg" alt="Foto do casal 2" class="gallery-img">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon">🔍</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-index="2">
+          <img src="images/gallery/photo3.jpg" alt="Foto do casal 3" class="gallery-img">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon">🔍</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-index="3">
+          <img src="images/gallery/photo4.jpg" alt="Foto do casal 4" class="gallery-img">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon">🔍</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-index="4">
+          <img src="images/gallery/photo5.jpg" alt="Foto do casal 5" class="gallery-img">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon">🔍</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-index="5">
+          <img src="images/gallery/photo6.jpg" alt="Foto do casal 6" class="gallery-img">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon">🔍</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <img src="" alt="Foto ampliada" class="lightbox-img" id="lightboxImg">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">✕</button>
+      <button class="lightbox-prev" id="lightboxPrev" aria-label="Anterior">‹</button>
+      <button class="lightbox-next" id="lightboxNext" aria-label="Próximo">›</button>
+    </div>
+  </div>
+
+  <!-- Lista de Presentes -->
+  <section class="section" id="presentes">
+    <div class="container">
+      <h2 class="section-title reveal">Lista de Presentes</h2>
+      <p class="section-subtitle reveal">
+        Sua presença é o nosso maior presente! Mas se quiser contribuir, 
+        ficaremos muito felizes em receber sua ajuda para começar nossa nova vida juntos.
+      </p>
+      
+      <div class="gifts-grid">
+        <div class="gift-card reveal">
+          <div class="gift-icon">🏠</div>
+          <h3 class="gift-title">Lua de Mel</h3>
+          <p class="gift-price">R$ 500,00</p>
+          <p class="gift-description">Ajude-nos a realizar a viagem dos nossos sonhos!</p>
+        </div>
+
+        <div class="gift-card reveal">
+          <div class="gift-icon">🛋️</div>
+          <h3 class="gift-title">Móveis</h3>
+          <p class="gift-price">R$ 300,00</p>
+          <p class="gift-description">Contribua para mobiliar nosso novo lar.</p>
+        </div>
+
+        <div class="gift-card reveal">
+          <div class="gift-icon">🍽️</div>
+          <h3 class="gift-title">Utensílios</h3>
+          <p class="gift-price">R$ 150,00</p>
+          <p class="gift-description">Itens essenciais para nossa cozinha.</p>
+        </div>
+
+        <div class="gift-card reveal">
+          <div class="gift-icon">💝</div>
+          <h3 class="gift-title">Valor Livre</h3>
+          <p class="gift-price">Qualquer valor</p>
+          <p class="gift-description">Contribua com o valor que desejar!</p>
+        </div>
+      </div>
+
+      <!-- PIX -->
+      <div class="pix-section reveal">
+        <h3 class="card-title">Contribua via PIX</h3>
+        <p class="card-text mb-3">Escaneie o QR Code ou copie a chave PIX abaixo:</p>
+        
+        <img src="images/qrcode/pix-qrcode.png" alt="QR Code PIX" class="pix-qrcode" id="pixQrcode">
+        
+        <div class="pix-key">
+          <span class="pix-key-text" id="pixKey">seuemail@exemplo.com</span>
+          <button class="pix-copy-btn" id="pixCopyBtn">Copiar</button>
+        </div>
+        
+        <p class="card-text mt-3" style="font-size: var(--font-size-sm); color: var(--color-gray-dark);">
+          ❤️ Muito obrigado pela sua generosidade!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Confirmação de Presença -->
+  <section class="section" id="confirmacao" style="background: var(--color-white);">
+    <div class="container">
+      <h2 class="section-title reveal">Confirme sua Presença</h2>
+      <p class="section-subtitle reveal">
+        Sua presença é muito importante para nós! 
+        Por favor, confirme até 15 de Maio de 2026.
+      </p>
+      
+      <form class="rsvp-form reveal" id="rsvpForm" action="https://formsubmit.co/seuemail@exemplo.com" method="POST">
+        <!-- Configurações FormSubmit -->
+        <input type="hidden" name="_subject" value="Nova confirmação de presença - Casamento">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+        
+        <div class="form-group">
+          <label for="name" class="form-label">Nome Completo *</label>
+          <input type="text" id="name" name="name" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">E-mail *</label>
+          <input type="email" id="email" name="email" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label for="guests" class="form-label">Número de Acompanhantes</label>
+          <input type="number" id="guests" name="guests" class="form-input" min="0" max="5" value="0">
+        </div>
+
+        <div class="form-group">
+          <label for="dietary" class="form-label">Restrições Alimentares</label>
+          <input type="text" id="dietary" name="dietary" class="form-input" placeholder="Ex: Vegetariano, Intolerância à lactose...">
+        </div>
+
+        <div class="form-group">
+          <label for="message" class="form-label">Mensagem para os Noivos</label>
+          <textarea id="message" name="message" class="form-textarea" placeholder="Deixe uma mensagem carinhosa..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">
+          Confirmar Presença
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-heart">💕</div>
+      <p class="footer-text">Ana & Bruno</p>
+      <p class="footer-text">15 de Junho de 2026</p>
+      <p class="footer-credits">
+        Feito com amor © 2026
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/animations.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
