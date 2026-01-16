@@ -11,16 +11,17 @@
 
     /* Cores Neutras */
     --color-white: #FFFFFF;
-    --color-cream: #FFFAF0;
+    --color-cream: #EBE5DE;
     --color-gray-light: #F5F5F5;
     --color-gray: #E0E0E0;
     --color-gray-dark: #757575;
     --color-black: #2C2C2C;
+    --color-green: #02300C;
 
     /* Gradientes */
-    --gradient-primary: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-primary) 100%);
+    --gradient-primary: linear-gradient(180deg, #02300C 0%, #035014 100%);
     --gradient-secondary: linear-gradient(135deg, var(--color-secondary-light) 0%, var(--color-secondary) 100%);
-    --gradient-hero: linear-gradient(135deg, rgba(255, 182, 193, 0.9) 0%, rgba(212, 175, 55, 0.8) 100%);
+    --gradient-hero: linear-gradient(135deg, rgb(235, 229, 222) 0%, rgba(255, 255, 255, 0.3) 60%);
 
     /* Tipografia */
     --font-primary: 'Playfair Display', serif;
@@ -110,6 +111,9 @@
     --container-md: 768px;
     --container-lg: 1024px;
     --container-xl: 1280px;
+
+    /* Botões */
+    --button-background-color: #EBE5DE;
 }
 
 /* Importar fontes do Google Fonts */

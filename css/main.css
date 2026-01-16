@@ -1,7 +1,7 @@
 /* Estilos Principais */
 body {
     font-family: var(--font-secondary);
-    color: var(--color-black);
+    color: var(--color-green);
     background: var(--color-cream);
     overflow-x: hidden;
 }
@@ -48,7 +48,7 @@ body {
 .nav-link {
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-medium);
-    color: var(--color-black);
+    color: var(--color-green);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     transition: color var(--transition-base);
@@ -149,7 +149,7 @@ body {
 .hero-content {
     position: relative;
     z-index: 1;
-    color: var(--color-white);
+    color: var(--color-green);
     padding: var(--spacing-xl);
 }
 
@@ -273,7 +273,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-white);
+    color: var(--color-green);
     font-size: var(--font-size-xl);
     box-shadow: var(--shadow-md);
 }
@@ -355,7 +355,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 182, 193, 0.8);
+    background: rgb(255 255 255 / 36%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -369,7 +369,7 @@ body {
 
 .gallery-overlay-icon {
     font-size: var(--font-size-4xl);
-    color: var(--color-white);
+    color: var(--color-green);
 }
 
 /* Lightbox */
@@ -408,7 +408,7 @@ body {
     position: absolute;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
-    color: var(--color-white);
+    color: var(--color-green);
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -465,7 +465,8 @@ body {
 .gift-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-2xl);
-    border-color: var(--color-primary);
+    border-color: #02300C;
+    cursor: pointer
 }
 
 .gift-icon {
@@ -477,20 +478,20 @@ body {
     font-family: var(--font-primary);
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-bold);
-    color: var(--color-black);
+    color: var(--color-green);
     margin-bottom: var(--spacing-sm);
 }
 
 .gift-price {
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-bold);
-    color: var(--color-secondary);
+    color: var(--color-green);
     margin-bottom: var(--spacing-md);
 }
 
 .gift-description {
     font-size: var(--font-size-sm);
-    color: var(--color-gray-dark);
+    color: var(--color-green);
     margin-bottom: var(--spacing-lg);
 }
 
@@ -524,8 +525,8 @@ body {
 
 .pix-copy-btn {
     padding: var(--spacing-sm) var(--spacing-md);
-    background: var(--gradient-primary);
-    color: var(--color-white);
+    background: var(--button-background-color);
+    color: var(--color-green);
     border-radius: var(--border-radius-md);
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-semibold);
