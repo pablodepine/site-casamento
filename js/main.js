@@ -13,7 +13,7 @@ if (navToggle) {
 // Contador Regressivo
 function countdown() {
     // Data do casamento (ajuste conforme necessário)
-    const weddingDate = new Date('2026-06-15T18:00:00').getTime();
+    const weddingDate = new Date('2027-07-10T18:00:00').getTime();
 
     const timer = setInterval(() => {
         const now = new Date().getTime();
@@ -59,7 +59,7 @@ if (pixCopyBtn && pixKey) {
             // Feedback visual
             const originalText = pixCopyBtn.textContent;
             pixCopyBtn.textContent = '✓ Copiado!';
-            pixCopyBtn.style.background = 'linear-gradient(135deg, #4CAF50 0%, #45a049 100%)';
+            pixCopyBtn.style.background = 'var(--button-background-color)';
 
             setTimeout(() => {
                 pixCopyBtn.textContent = originalText;
