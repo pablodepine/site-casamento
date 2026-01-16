@@ -24,8 +24,8 @@
     --gradient-hero: linear-gradient(135deg, rgb(235, 229, 222) 0%, rgba(255, 255, 255, 0.3) 60%);
 
     /* Tipografia */
-    --font-primary: 'Playfair Display', serif;
-    --font-secondary: 'Inter', sans-serif;
+    --font-primary: 'Cormorant SC', serif;
+    --font-secondary: 'Cormorant SC', serif;
 
     --font-size-xs: clamp(0.75rem, 2vw, 0.875rem);
     /* 12px min, fluid, 14px max */
@@ -117,4 +117,4 @@
 }
 
 /* Importar fontes do Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap');
